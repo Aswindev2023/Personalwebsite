@@ -53,9 +53,11 @@ body{
     color: #FAFAFA;
 }
 .landing-sec h1 span{
-    background-image: linear-gradient(to right, rgb(13,128,221),rgb(21,215,200));
-    background-clip: text;
-     color: rgba(255, 255, 255, 0);
+   background-image: linear-gradient(to right, rgb(13,128,221), rgb(21,215,200));
+  background-clip: text;
+  -webkit-background-clip: text; /* For older WebKit browsers */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .landing-sec p{
     color: #A1A1A1;
@@ -74,7 +76,7 @@ body{
     color: #F9F9F9;
     font-size:12px;
     font-weight: 500;
-    margin-bottom: 30px;
+    padding: 30px;
 }
 .footer .so{
     color: #A1A1A1;
