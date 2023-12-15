@@ -55,7 +55,7 @@ body{
 .landing-sec h1 span{
     background-image: linear-gradient(to right, rgb(13,128,221),rgb(21,215,200));
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+     color: rgba(255, 255, 255, 0);
 }
 .landing-sec p{
     color: #A1A1A1;
