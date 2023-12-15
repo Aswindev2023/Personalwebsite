@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylecontact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aswindev-Contact Me </title>
+</head>
+<!--navbar-->
+<body> 
+    <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "><i class="fa-solid fa-sliders"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!-- Contact Section -->
+   <section id="contact" class="container con">
+   <h1>Contact Me</h1>
+    <p>Feel free to reach out using the contact form or other methods below.</p>
+    <div id="success-message" style="display: none; color: #4CAF50; margin-bottom: 20px;">
+        Thank you! Your message has been sent successfully.
+    </div>
+
+
+
+    <h2>Contact Form</h2>
+    <div class="form ">
+    <form id="contact-form" action="process_form.php" method="post">  
+        <label for="name" class="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" class="name">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject" class="name">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message" class="name">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" onclick="showSuccessMessage()">Submit</button>
+    </form>
+    
+</div>
+
+    <h2 id="other">Other Contact Methods</h2>
+    <p>If you prefer other methods of contact, feel free to reach out using the information below:</p>
+
+    <ul class="oth">
+        <li>Email: <a href="mailto:aswin8427@gmail.com">aswin8427@gmail.com</a></li>
+        <li>Phone: +91 7994339439</li>
+        <li>Social Media:
+            <ul>
+                <li><a href="https://www.facebook.com/aswin.dev.7549185?mibextid=JpSO2FKliISFprGe" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com/aswindev4k7?igshid=OGY3MTU3OGY1Mw==" target="_blank">Instagram</a></li>
+                
+            </ul>
+        </li>
+    </ul>
+   </section>
+   <!--Footer-->
+   <div class="container footer">
+     <div class="row text-center">
+        <div class="col-lg-12 ">
+            <p><i class="fa-regular fa-copyright"></i>2023 Aswindev</p>
+        </div>    
+     </div>
+   </div> 
+   <script>
+    function showSuccessMessage() {
+        
+        document.getElementById('success-message').style.display = 'block';
+
+        document.getElementById('contact-form').reset();
+    }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>
+
+
+
+
+
+
