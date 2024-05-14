@@ -94,11 +94,23 @@
      </div>
    </div> 
    <script>
+   
     function showSuccessMessage() {
-        
-        document.getElementById('success-message').style.display = 'block';
 
-        document.getElementById('contact-form').reset();
+      var myInput = document.getElementById("name");
+      var myInput2= document.getElementById("email");
+      var myInput3= document.getElementById("subject");
+      var myInput4= document.getElementById("message");
+    if (!myInput.value.length||!myInput2.value.length||!myInput3.value.length||!myInput4.value.length) {
+        alert('Form can\'t be empty');
+        return;
+    }
+    else{
+      document.getElementById('success-message').style.display = 'block';
+        
+    }
+    document.getElementById('contact-form').reset();
+       
     }
 </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
