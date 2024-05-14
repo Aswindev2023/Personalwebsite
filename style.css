@@ -53,9 +53,11 @@ body{
     color: #FAFAFA;
 }
 .landing-sec h1 span{
-    background-image: linear-gradient(to right, rgb(13,128,221),rgb(21,215,200));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, rgb(13,128,221), rgb(21,215,200));
+  background-clip: text;
+  -webkit-background-clip: text; /* For older WebKit browsers */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .landing-sec p{
     color: #A1A1A1;
@@ -70,11 +72,12 @@ body{
     font-weight:600;
     border-radius: 10px;
 }
+
 .footer h1{
     color: #F9F9F9;
     font-size:12px;
     font-weight: 500;
-    margin-bottom: 30px;
+    padding: 30px;
 }
 .footer .so{
     color: #A1A1A1;
@@ -88,7 +91,7 @@ body{
     font-weight: 500;
     margin-top: 30px;
 }
-/*.aboutSec {
+.aboutSec {
     padding-top: 50px;
     padding-bottom: 100px;
     padding-left: 50px;
@@ -140,7 +143,4 @@ body{
     border-radius: 10px;
   }
   
-  .aboutSec img {
-    padding-top: 50px;
-  }
-  */
+ 
